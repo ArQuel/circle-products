@@ -2,6 +2,9 @@
   font-family: 'Roboto', sans-serif;
   margin: 0px;
   padding: 0px;
+}
+
+html {
   max-width: 1024px;
   max-height: 780px;
   margin: auto

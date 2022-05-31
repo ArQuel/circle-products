@@ -1,11 +1,12 @@
-async function ApiServices (id) {
+async function ApiServices () {
+
+    const datas = await fetch('https://fakestoreapi.com/products?limit=7')
+    .then(res=>res.json())
     
-    const datas = fetch('https://fakestoreapi.com/products')
-            .then(res=>res.json())
-            .then(json=>console.log(json))  
     
-            console.log(datas)
-    return datas
-    }
     
-    export default ApiServices
+    return await datas
+    
+}
+    
+export default ApiServices
