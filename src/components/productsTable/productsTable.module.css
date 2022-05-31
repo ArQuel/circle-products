@@ -1,0 +1,59 @@
+.table {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.titleTable {
+    margin-top: 50px;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: #564AFF;
+    font-size: 13px;
+    display: flex;
+    color: white;
+    font-weight: bold;
+    justify-content: space-between;
+}
+
+.tableName {
+    width: 50%;
+}
+
+.tableCategory {
+    width: 10%;
+    text-align: center;
+}
+
+.tablePrice {
+    width: 10%;
+}
+
+.tablePriceVAT {
+    width: 10%;
+}
+
+.product {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 13px;
+    -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.31); 
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.15);
+}
+
+.productTitle {
+    width: 50%;
+    text-overflow: ellipsis;
+}
+
+.productPrice {
+    width: 10%;
+}
+
+.productPriceVAT {
+    width: 10%;
+    text-align: center;
+}

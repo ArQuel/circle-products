@@ -1,0 +1,19 @@
+.categoryJewelery {
+    width: 8%;
+    background-color: #32B436;
+    text-align: center;
+    padding: 5px;
+    border-radius: 10px;
+    color: white;
+    align-self: center;
+}
+
+.categoryMens {
+    width: 8%;
+    color: white;
+    background-color: #FFA846;
+    text-align: center;
+    padding: 5px;
+    border-radius: 10px;
+    align-self: center;
+}
