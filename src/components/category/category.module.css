@@ -1,5 +1,5 @@
 .categoryJewelery {
-    width: 8%;
+    width: 120px;
     background-color: #32B436;
     text-align: center;
     padding: 5px;
@@ -9,7 +9,7 @@
 }
 
 .categoryMens {
-    width: 8%;
+    width: 120px;
     color: white;
     background-color: #FFA846;
     text-align: center;

@@ -4,7 +4,12 @@ import { Link } from 'react-router-dom'
 
 function Table (props) {
     const datas = Array.from(props.datas)
+
+    // rajouter tri de datas avec sort
+
     return(
+        <div className={styles.tableCtn}>
+
         <div className={styles.table}>
             <div className={styles.titleTable}>
                 <span className={styles.tableName}>Product name</span>
@@ -24,6 +29,8 @@ function Table (props) {
                      
         })}
         </div>
+        </div>
+
     )
 }
 
