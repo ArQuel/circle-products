@@ -8,7 +8,7 @@ function Navbar () {
             <Link className={styles.link} to={`/product/`}>
                 <div className={styles.logo}>
                     <img src={circle} className={styles.circleLogo} alt="Logo Circle Products"></img>
-                    <h3 className={styles.circleTitle}>Circle <br/> Products</h3>
+                    <h1 className={styles.circleTitle}>Circle <br/> Products</h1>
                 </div>
             </Link>
             <div className={styles.menu}>   

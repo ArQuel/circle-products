@@ -20,10 +20,10 @@ function ProductPage() {
             return <Error404 />
         }
         setProduct(productDataClass)
-      }, [id])
+    }, [id])
 
 
-    return ( product ?
+    return (product ?
         <div className={styles.page}>
             <Link to={`/product`}>
                 <img className={styles.arrow} src={arrow} alt='Back arrow'></img>
@@ -38,22 +38,22 @@ function ProductPage() {
                 <div className={styles.productDescCtn}>
                     <div className={styles.descBr}>
                         <div className={styles.productDesc}>
-                            <h3 className={styles.productTitle}>Description</h3>
+                            <h2 className={styles.productTitle}>Description</h2>
                             <p className={styles.productDescText}>{product.description}</p>
                         </div>
                         <div className={styles.productCategoryCtn}>
-                            <h3 className={styles.productTitle}>Category</h3>
+                            <h2 className={styles.productTitle}>Category</h2>
                             <Category category={product.category} />
                         </div>
                     </div>
 
                     <div className={styles.productPrice}>
-                        <h3 className={styles.productTitle}>Price</h3>
+                        <h2 className={styles.productTitle}>Price</h2>
                     </div>
                     <div className={styles.IbCtn}>
                         <div className={styles.pricesCtn}>
-                            <input type='number' placeholder='€'></input>
-                            <p className={styles.productTVA}>Price (including VAT): {product.getTVA()}</p>
+                            <input type='number' placeholder='€' label='prix'></input>
+                            <p className={styles.productTVA}><b>Price</b> (including VAT): {product.getTVA()}</p>
                         </div>
                         <button>Update product</button>
                     </div>
