@@ -11,8 +11,7 @@
 .logo {
     display: flex;
     flex-direction: row;
-    position: absolute;
-    top: 50px;
+    margin-top: 80px;
 }
 
 .circleLogo {
@@ -23,6 +22,8 @@
     color: white;
     padding-top: 3px;
     padding-left: 3px;
+    text-decoration: none;
+
 }
 
 .menu {
@@ -43,4 +44,8 @@ span {
 
 .bar {
     opacity: 0.33;
+}
+
+.link {
+    text-decoration: none;
 }

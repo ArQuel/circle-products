@@ -18,6 +18,7 @@
 
 .tableName {
     width: 50%;
+    
 }
 
 .tableCategory {
@@ -42,6 +43,8 @@
     font-size: 13px;
     -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.31); 
     box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.15);
+    color: black;
+    
 }
 
 .productTitle {
@@ -56,4 +59,8 @@
 .productPriceVAT {
     width: 10%;
     text-align: center;
+}
+
+.link {
+    text-decoration: none;
 }

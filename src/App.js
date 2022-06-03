@@ -1,12 +1,12 @@
 import styles from './app.module.css'
-import Home from './components/home/home'
 import Navbar from './components/navbar/navbar';
+import Chemin from './route/route';
 
 function App() {
   return (
     <div className={styles.App}>
       <Navbar></Navbar>
-      <Home></Home>
+      <Chemin />
     </div>
   );
 }
