@@ -15,7 +15,7 @@ class Product {
     }
 
     getTVA = () => {
-        return `${Math.round(this.price + this.price * 0.20 * 100) / 100} €`
+        return `${Math.round(this.price + ((this.price * 20) / 100))} €`
     }
     
 }

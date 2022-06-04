@@ -113,6 +113,7 @@ button {
     background-color: #564AFF;
     color: white;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .pricesCtn {
