@@ -4,8 +4,14 @@ import { Link } from 'react-router-dom'
 
 function Table (props) {
     const datas = Array.from(props.datas)
+    // const tabSort = false
+    // datas.sort(compareCategory)
 
-    // rajouter tri de datas avec sort
+    // function compareCategory (a , b) {
+    //     if (a.category.toLowerCase() < b.category.toLowerCase()) {
+    //         return !tabSort
+    //     }
+    // }
 
     return(
         <div className={styles.tableCtn}>
@@ -15,7 +21,7 @@ function Table (props) {
                 <span className={styles.tableName}>Product name</span>
                 <span className={styles.tableCategory}>Category</span>
                 <span className={styles.tablePrice}>Price</span>
-                <span className={styles.tablePriceVAT}>Price (including VAT)</span>
+                <span className={styles.tablePriceVAT}>Total (TVA)</span>
             </div>
         {datas.map(data => {
             return  <Link key={data.id} className={styles.link} to={`/product/${data.id}`}>

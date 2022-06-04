@@ -2,3 +2,9 @@
     display: flex;
     
 }
+
+@media screen and (max-width: 1065px) {
+    .App {
+        flex-direction: column;
+    }
+}

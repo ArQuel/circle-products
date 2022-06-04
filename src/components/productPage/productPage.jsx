@@ -64,6 +64,8 @@ function ProductPage() {
 
     }, [id])
 
+    
+
     return (product ?
         <div className={styles.page}>
             <Link to={`/product`}>
@@ -96,7 +98,7 @@ function ProductPage() {
                             <input value={price} onChange={(e) => setPrice(e.currentTarget.value)} type='number' placeholder='€' label='prix'></input>
                             <p className={styles.productTVA}><b>Price</b> (including VAT): {product.getTVA()}</p>
                         </div>
-                        <button onClick={updatePrice}>Update product</button>
+                        <button type='submit' disabled={!price} onClick={updatePrice}>Update product</button>
                     </div>
                 </div>
             </div>

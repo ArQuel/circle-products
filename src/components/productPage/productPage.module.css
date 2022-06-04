@@ -116,6 +116,11 @@ button {
     cursor: pointer;
 }
 
+button[disabled=disabled], button:disabled {
+    opacity: 0.33;
+    cursor: not-allowed;
+}
+
 .pricesCtn {
     display: flex;
     width: 400px;
@@ -127,3 +132,33 @@ button {
     opacity: 0.7;
 }
 
+@media screen and (max-width:1540px) {
+    .productCategoryCtn {
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width:1520px) {
+    .productCtn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0px;
+    }
+
+    .imageCtn {
+        max-width: 200px !important;
+        max-height: 200px;
+        margin-left: 0px;
+    }
+
+    .productIMG {
+        width: 200px;
+        height: 250px;
+    }
+
+    .descBr {
+        display: flex;
+        flex-direction: column;
+    }
+}

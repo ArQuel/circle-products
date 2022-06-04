@@ -9,3 +9,13 @@
     margin-top: 50px;
     color: #564AFF;
 }
+
+@media screen and (max-width:1065px) {
+    .home {
+        width: 99%;
+    }
+    .title {
+        margin-top: 50px;
+        color: #564AFF;
+    }
+}

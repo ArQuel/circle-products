@@ -17,3 +17,27 @@
     border-radius: 10px;
     align-self: center;
 }
+
+@media screen and (max-width:1065px) {
+    .categoryJewelery {
+        width: 60px;
+        background-color: #32B436;
+        text-align: center;
+        padding: 4px;
+        border-radius: 10px;
+        color: white;
+        align-self: center;
+    }
+    
+    .categoryMens {
+        width: 60px;
+        color: white;
+        background-color: #FFA846;
+        text-align: center;
+        padding: 4px;
+        border-radius: 10px;
+        align-self: center;
+    }
+    
+
+}
