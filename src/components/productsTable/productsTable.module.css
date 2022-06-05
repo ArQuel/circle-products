@@ -80,6 +80,7 @@
 
     .table {
         padding-left: 5px;
+        margin-bottom: 50px;
     }
     
     .titleTable {
@@ -101,9 +102,7 @@
         width: 20%;
         text-align: left;
     }
-    
-
-    
+        
     .product {
         align-items: center;
     }

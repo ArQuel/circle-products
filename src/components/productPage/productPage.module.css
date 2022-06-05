@@ -133,9 +133,7 @@ button[disabled=disabled], button:disabled {
 }
 
 @media screen and (max-width:1540px) {
-    .productCategoryCtn {
-        margin-left: 20px;
-    }
+
 }
 
 @media screen and (max-width:1520px) {
@@ -143,7 +141,6 @@ button[disabled=disabled], button:disabled {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-left: 0px;
     }
 
     .imageCtn {
@@ -157,8 +154,131 @@ button[disabled=disabled], button:disabled {
         height: 250px;
     }
 
+    .titleCtn {
+        margin-top: 50px;
+    }
+
+    .arrow {
+        top: 4.5%;
+        left: 7%;
+    }
+
+    .productDescCtn {
+        margin-left: 0px;
+        width: 100%;
+        display: flex;
+        height: 442px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .productDesc {
+        width: 100%;
+        display: flex;
+    }
+
+    .productCtn {
+        margin-top: 50px
+    }
+
     .descBr {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-around;
+        margin-top: 50px;
     }
+    
+    .productCategoryCtn {
+        margin-left: 20px;
+    }
+
+    .productPrice {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .productTitle {
+        width: 110px;
+    }
+}
+
+@media screen and (max-width:1380px) {
+    .title {
+        font-size: 22px;
+    }
+
+    .arrow {
+        top: 4.8%;
+        width: 25px;
+    }
+}
+
+@media screen and (max-width:730px) {
+    .title {
+        font-size: 18px;
+    }
+
+    .arrow {
+        top: 4.8%;
+        width: 20px;
+    }
+
+    .productDesc {
+        margin-left: 20px;
+    }
+
+    .pricesCtn {
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    .IbCtn {
+        align-items: center;
+    }
+
+    .productTVA {
+        opacity: 0.7;
+        margin-top: 15px;
+    }
+
+    .arrow {
+        top: 1.5%;
+        width: 30px;
+    }
+
+    .title {
+        margin-top: 20px
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .productCtn {
+        width: auto;
+        margin-left: 0px;
+    }
+
+    .imageCtn {
+        min-width: 90%;
+    }
+
+
+
+    .title {
+        width: 80%;
+        text-align: center;
+    }
+
+    .productDescCtn {
+        width: auto;
+    }
+    
+    .productTitle {
+        width: auto;
+    }
+
+    .productCategoryCtn {
+        margin-left: 0px;
+    }
+    
 }
