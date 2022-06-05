@@ -1,6 +1,10 @@
 import styles from './Error404.module.css'
 
-function Error404 () {
+/**
+    * This component will render Error 404 page.
+*/
+
+function Error404() {
     return (
         <div className={styles.error404Ctn}>
             <div className={styles.error404}>

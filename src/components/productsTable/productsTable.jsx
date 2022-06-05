@@ -1,8 +1,14 @@
 import Category from '../category/category'
 import styles from './productsTable.module.css'
 import { Link } from 'react-router-dom'
+import PropTypes from "prop-types"
 
 function Table (props) {
+    /**
+        * This component will render the main page, including a table with all the products.
+        * @param {array} props - Array of objects where datas are.
+    */
+
     const datas = Array.from(props.datas)
     // const tabSort = false
     // datas.sort(compareCategory)
@@ -39,5 +45,11 @@ function Table (props) {
 
     )
 }
+
+// React propTypes define here which type of props the component must get
+
+Table.propTypes = {    
+    datas : PropTypes.array.isRequired
+  } 
 
 export default Table

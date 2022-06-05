@@ -8,47 +8,52 @@ import Product from '../../dataModels/product.class'
 import { useEffect, useState } from 'react'
 
 function ProductPage() {
+
+    /**
+        * This component will render the Product page, with description, price and image concerning the product.
+    */
+
     let { id } = useParams()
     const [product, setProduct] = useState(undefined)
     const [price, setPrice] = useState('')
 
-    async function updatePrice () {
-        // this function will call API to put a new price in the current product
-        await fetch(`https://fakestoreapi.com/products/${id}`,{
-               method:"PUT",
-               headers: {
-                   'Accept': 'application/json',
-                   'Content-Type': 'application/json'
-               },
-               body: JSON.stringify(
-                   {
-                       title: product.title,
-                       price: parseInt(price),
-                       description: product.description,
-                       image: product.image,
-                       category: product.category
-                   }
-               )
-           })
-               .then(res=>res.json())
-               .then(produit => {
-                   // Creating new class of Product with the render of API, then get storage and update it, then update useState of product 
-                   const newProduct = new Product(produit)
-                   const storageProducts = JSON.parse(localStorage.getItem('products'))
-                   for (let i = 0; i < storageProducts.length; i++) {
-                       if (parseInt(id) === storageProducts[i].id) {
-                          storageProducts[i] = newProduct
-                          localStorage.setItem('products', JSON.stringify(storageProducts))
-                          setProduct(newProduct)
-                       }
-                   }
-               })
-               .catch(error => {
-                    alert(error.message)
-                    return <Error404 />
-               }
-                )
-   }
+    // this function will call API to put a new price in the current product
+    async function updatePrice() {
+        await fetch(`https://fakestoreapi.com/products/${id}`, {
+            method: "PUT",
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(
+                {
+                    title: product.title,
+                    price: parseInt(price),
+                    description: product.description,
+                    image: product.image,
+                    category: product.category
+                }
+            )
+        })
+            .then(res => res.json())
+            .then(produit => {
+                // Creating new class of Product with the render of API, then get storage and update it, then update useState of product 
+                const newProduct = new Product(produit)
+                const storageProducts = JSON.parse(localStorage.getItem('products'))
+                for (let i = 0; i < storageProducts.length; i++) {
+                    if (parseInt(id) === storageProducts[i].id) {
+                        storageProducts[i] = newProduct
+                        localStorage.setItem('products', JSON.stringify(storageProducts))
+                        setProduct(newProduct)
+                    }
+                }
+            })
+            .catch(error => {
+                alert(error.message)
+                return <Error404 />
+            }
+            )
+    }
 
     useEffect(() => {
         // get current product in the storage and render it
@@ -56,7 +61,7 @@ function ProductPage() {
         const productData = storageProducts.find(elt => elt.id === parseInt(id))
         const productDataClass = new Product(productData)
 
-        // verify the id in URL, if it's not in current DB fetched, render Error 404
+        // verify the id in URL, if it's not in current datas, render Error404 component
         if (parseInt(id) > storageProducts.length) {
             return <Error404 />
         }
@@ -64,7 +69,7 @@ function ProductPage() {
 
     }, [id])
 
-    
+
 
     return (product ?
         <div className={styles.page}>

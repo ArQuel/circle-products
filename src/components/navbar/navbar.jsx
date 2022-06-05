@@ -3,6 +3,11 @@ import circle from '../../assets/circle.svg'
 import { Link } from 'react-router-dom'
 
 function Navbar() {
+
+    /**
+        * This component will render Navbar element.
+    */
+
     return (
         <div className={styles.hamburger}>
             <div className={styles.navbar}>

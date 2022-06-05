@@ -6,8 +6,13 @@ import Product from '../../dataModels/product.class'
 
 function Home() {
 
+  /**
+    * This component will render Home page, which render the dashboard.
+  */
+
   const [datas, setDatas] = useState(undefined)
 
+  // Each render, the component will verify if there is something in the localStorage to render it, if not, it call the API to get the products and put it in localStorage.
   useEffect(() => {
     if (!datas) {
       const storageProducts = localStorage.getItem('products')
