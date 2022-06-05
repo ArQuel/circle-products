@@ -1,70 +1,44 @@
-# Getting Started with Create React App
+# Circle Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Testing project for GoWeb
 
-## Available Scripts
+### Pre-requires:
 
-In the project directory, you can run:
+#### Home :
 
-### `npm start`
+- Intégration complète de la maquette (n'oubliez pas le responsive)
+- Récupération de la liste des produits via un appel à fakestoreapi
+- Mise en place d'une classe produit permettant de gérer la modification du prix d'un produit ainsi que
+le calcul de la TVA (20%)
+- Lorsqu'on clique sur la ligne d'un produit, on navigue vers la page de détails où on affichera
+l'ensemble des informations du produit
+#### Page produit :
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Intégration complète de la maquette (n'oubliez pas le responsive)
+- Permettre de mettre à jour le prix d'un produit et de l'envoyer via un appel API lors du clic sur le
+bouton "Update product" (le bouton ne doit être cliquable que si le prix a été modifié)
+- Mettre à jour l'affichage du prix TTC lorsqu'on modifie localement le prix du produit
+- Permettre de rafraichir la page produit sans perdre les données
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Elements provided:
 
-### `npm test`
+ - Technical constraints
+ - [FakeStoreAPI](https://fakestoreapi.com/docs)
+ - [Model](https://xd.adobe.com/view/3e2909d1-79c4-4337-b504-37b1742fcffc-6b7a/grid/)
+ - Font-Family : `Roboto`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Technologies used:
 
-### `npm run build`
+- react v 18.1.0
+- react-dom v 18.1.0
+- react-router v 6.3.0
+- react-router-dom v 6.3.0
+- prop-types v 15.8.1
+### Set up:
+#### Front-end:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Open `circle` directory :
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Then, install dependencies : `npm install`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- You can run the App server with `npm start` command (port 3000)
