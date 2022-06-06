@@ -10,4 +10,6 @@ html {
   margin: auto
 }
 
-
+:root {
+  --primary: #564AFF
+}

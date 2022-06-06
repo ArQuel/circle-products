@@ -18,6 +18,8 @@ function Chemin() {
       <Route path="/product" element={<Home />} />
       <Route path="/product/:id" element={<ProductPage />} />
       <Route path="*" element={<Error404 />} />
+      <Route path="/product/error/404" element={<Error404 />} />
+
     </Routes>
   );
 }

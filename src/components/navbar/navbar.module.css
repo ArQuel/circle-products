@@ -1,5 +1,5 @@
 .navbar {
-    background-color: #564AFF;
+    background-color: var(--primary);
     min-width: 350px;
     width: 350px;
     height: 1080px;
@@ -52,7 +52,7 @@ span {
 
 @media screen and (max-width:1065px) {
     .navbar {
-        background-color: #564AFF;
+        background-color: var(--primary);
         width: 100%;
         height: 300px;
         display: flex;

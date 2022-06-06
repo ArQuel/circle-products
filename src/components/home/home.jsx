@@ -3,6 +3,8 @@ import ApiServices from '../../services/fetch'
 import { useEffect, useState } from 'react'
 import Table from '../productsTable/productsTable'
 import Product from '../../dataModels/product.class'
+// Lib import as bonus to have a nice loader
+import LoopCircleLoading from 'react-loadingg/lib/LoopCircleLoading'
 
 function Home() {
 
@@ -32,7 +34,7 @@ function Home() {
   return (
     <div className={styles.home}>
       <h1 className={styles.title}>Products management</h1>
-      {datas ? <Table datas={datas} /> : <h1>Chargement</h1>}
+      {datas ? <Table datas={datas} /> : <div className={styles.loading}><LoopCircleLoading style={{margin: '45%'}} color='var(--primary)'/></div>}
     </div>
   )
 }

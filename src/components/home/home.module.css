@@ -7,7 +7,7 @@
 
 .title {
     margin-top: 50px;
-    color: #564AFF;
+    color: var(--primary);
 }
 
 @media screen and (max-width:1065px) {
@@ -16,6 +16,14 @@
     }
     .title {
         margin-top: 50px;
-        color: #564AFF;
+        color: var(--primary);
     }
+}
+
+.loading {
+    background-color: white;
+    width: 50%;
+    margin-right: 25px;
+    height: 50%;
+    position: relative
 }
