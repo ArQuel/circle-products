@@ -9,7 +9,7 @@ async function ApiServices() {
         .then(res => res.json())
         .catch(error => error.message)
 
-    return await datas
+    return datas
 
 }
 
